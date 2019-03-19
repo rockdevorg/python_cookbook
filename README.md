@@ -12,5 +12,9 @@ a,b = [1,2] # 比较简单
 
 ```python
 first,*middle,last = list(range(20))
+record = ('Dave', 'dave@example.com', '773-555-1212', '847-555-1212')
+name,mail,*phone_number = record
+phone_number结果为['773-555-1212', '847-555-1212']，列表类型，不管解压的结果是0个还是多个。
+* 运算符能用于前中后
 ```
 
